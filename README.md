@@ -1,4 +1,4 @@
-FizzBuzz - Typical programming test [![Build Status](https://travis-ci.org/Cifixie/fizzbuzz.svg)](https://travis-ci.org/Cifixie/fizzbuzz)
+FizzBuzz - Typical programming test
 -----------------------------------
 
 What it's all about:
