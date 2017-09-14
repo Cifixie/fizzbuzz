@@ -1,11 +1,10 @@
 'use strict';
 
 const isDividedBy = (x,n) => (whenTrue, whenFalse) => x % n === 0 ? whenTrue : whenFalse;
-const repeat = times => (a, i) => {
-  i = i || 0;
-  if (i++ < times) {
+const repeat = times => (a, i = 1) => {
+  if (i <= times) {
     a(i);
-    repeat(times)(a, i);
+    repeat(times)(a, ++i);
   }
 };
 
