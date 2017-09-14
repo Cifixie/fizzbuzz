@@ -14,3 +14,5 @@ Build:
 
 Run:
 `node dist/fizzbuzz.js [number]`
+- Returns corresponding answer for given number
+- If not passed, returns 30 first answers
