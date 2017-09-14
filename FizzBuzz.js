@@ -1,10 +1,10 @@
-const isDividedBy = (x,n) => string => x % n === 0 ? string : '';
+import {isDividedBy} from './utils'
 
-const fb = (number) => isDividedBy(number,3)('Fizz') + ' ' + isDividedBy(number,5)('Buzz');
+const getFizzIfDividedByThree = (n) => isDividedBy(n,3)('Fizz', '');
+const getBuzzIfDividedByFive = (n) => isDividedBy(n,5)('Buzz', '');
+const buildFizzBuzz = (n) => getFizzIfDividedByThree(n) + ' ' + getBuzzIfDividedByFive(n);
 
 export default function* fizzBuzz() {
-  var current = 1;
-  do {
-    yield fb(current++).trim();
-  } while(true);
+  let current = 1;
+  while(true) yield buildFizzBuzz(current++).trim();
 };

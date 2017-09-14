@@ -2,7 +2,7 @@ import fizzBuzz from './fizzbuzz'
 import {repeat} from './utils'
 
 test('Test first 15 numbers', () => {
-  const fb = fizzBuzz(10);
+  const fb = fizzBuzz();
   const exceptions = {
     3: 'Fizz',
     5: 'Buzz',
