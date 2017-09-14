@@ -1,4 +1,4 @@
-import {repeat, isDividedBy } from './utils'
+import {repeat, isDividedBy } from '../src/utils'
 
 test('repeat calls given function X -times', () => {
   const fn = jest.fn();

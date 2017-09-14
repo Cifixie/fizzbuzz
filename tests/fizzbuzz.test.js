@@ -1,14 +1,18 @@
-import fizzBuzz from './fizzbuzz'
-import {repeat} from './utils'
+import fizzBuzz from '../src/fizzbuzz'
+import {repeat} from '../src/utils'
 
 test('Test first 15 numbers', () => {
   const fb = fizzBuzz();
   const exceptions = {
+    1: '1',
+    2: '2',
     3: 'Fizz',
+    4: '4',
     5: 'Buzz',
     6: 'Fizz',
     9: 'Fizz',
     10: 'Buzz',
+    11: '11',
     12: 'Fizz',
     15: 'Fizz Buzz'
   };
