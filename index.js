@@ -1,0 +1,1 @@
+import Fizzbuzz from './fizzbuzz'

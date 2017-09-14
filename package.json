@@ -1,0 +1,19 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Cifixie/fizzbuzz.git",
+  "author": "Tommi <mato12@hotmail.fi>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-jest": "^21.0.2",
+    "babel-preset-env": "^1.6.0",
+    "regenerator-runtime": "^0.11.0"
+  },
+  "devDependencies": {
+    "jest": "^21.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
