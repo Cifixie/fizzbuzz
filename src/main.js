@@ -1,6 +1,12 @@
-import fizzBuzz from './fizzBuzz';
+import {fizzBuzz, buildFizzBuzz} from './fizzBuzz';
 import {repeat} from './utils';
 
-const times = Number.parseInt(process.argv.pop()) || 30;
-const fb = fizzBuzz();
-repeat(times)(() => console.log(fb.next().value));
+const times = 30;
+const number = Number.parseInt(process.argv.pop());
+if (number) {
+  console.log(buildFizzBuzz(number))
+}
+else {
+  const fb = fizzBuzz();
+  repeat(30)(() => console.log(fb.next().value));  
+}

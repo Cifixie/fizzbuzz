@@ -18,6 +18,11 @@ function* fizzBuzz() {
   while(true) yield buildFizzBuzz(current++);
 }
 
-const times = Number.parseInt(process.argv.pop()) || 30;
-const fb = fizzBuzz();
-repeat(times)(() => console.log(fb.next().value));
+const number = Number.parseInt(process.argv.pop());
+if (number) {
+  console.log(buildFizzBuzz(number));
+}
+else {
+  const fb = fizzBuzz();
+  repeat(30)(() => console.log(fb.next().value));  
+}
